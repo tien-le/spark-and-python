@@ -15,10 +15,9 @@ Understanding Spark and Python based on Udemy course "Spark and Python for Big D
 + pip3 install py4j
 + pip3 install findspark
 --> Unittest:
-<code>
+```
 import findspark
-  
 findspark.init("/home/tien/dev/work/tool/spark-2.4.4-bin-hadoop2.7")
 
 import spark
-</code>
+```
