@@ -27,7 +27,7 @@ import spark
 ## IllegalArgumentException: 'Unsupported class file major version 55'
 sudo apt-get install openjdk-8-jdk
 
-sudo apt install openjdk-14-jdk-headless
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 $ sudo update-alternatives --config javac
 ```
