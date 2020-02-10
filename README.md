@@ -21,3 +21,25 @@ findspark.init("/home/tien/dev/work/tool/spark-2.4.4-bin-hadoop2.7")
 
 import spark
 ```
+
+# How to Fix Errors
+
+## IllegalArgumentException: 'Unsupported class file major version 55'
+sudo apt-get install openjdk-8-jdk
+
+sudo apt install openjdk-14-jdk-headless
+
+$ sudo update-alternatives --config javac
+```
+There are 2 choices for the alternative javac (providing /usr/bin/javac).
+
+  Selection    Path                                          Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-14-openjdk-amd64/bin/javac   1411      auto mode
+  1            /usr/lib/jvm/java-14-openjdk-amd64/bin/javac   1411      manual mode
+  2            /usr/lib/jvm/java-8-openjdk-amd64/bin/javac    1081      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 2
+update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in manual mode
+```
+
