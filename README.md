@@ -45,32 +45,49 @@ update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/bin/javac to provid
 
 # Step by step for Machine Learning with pyspark (simple outline)
 
-## Sample Data
 
-## Load input corpus
+# B1: Create SparkSession
 
-## Print the Schema of the DataFrame
+# B2: Load input corpus
+# 'cruise_ship_info.csv'
 
-## Description of input corpus
+# B3: Show overview of input corpus
+## Schema
+
+## Description
 
 ## The column names
 
-## Show head 2 lines
+## Sample Data
 
 ## Print each item in the first line
 
-## Setting Up DataFrame for Machine Learning
-A few things we need to do before Spark can accept the data! It needs to be in the form of two columns
-**("label","features")** --> Import VectorAssembler
+# B4: Data Preprocessing
 
-## Split to training set and testing set
+## Deal with the categorical variable
+Using StringIndexer
 
-## Create a Linear Regression Model object
+# B5: Create VectorAssembler for 'features'
 
-## Fit the model to the data
+# B6: Split Full Data to Training set & Testing set
 
-## Print the coefficients and intercept for ML method
+# B7: Train & Test Phase
+
+## Create Model object
+
+## Fit the model to data
+
+## Print coefficients and intercept for ML model (if needed)
+
+## Evaluate the model based on the testing set
 
 ## Show residuals after evaluating testing set
 
-## Print MSE, RMSE and r2 of training set and after evaluating testing set
+## Show the relative scores of training set and after evaluating testing set
+### Regression Model: MSE, RMSE, R2
+
+### Show the correlation between 2-variable features
+Using function corr in pyspark.sql.functions
+
+### Classification Model: Precision, Recall, F1
+
